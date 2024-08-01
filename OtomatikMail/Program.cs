@@ -36,7 +36,7 @@ namespace OtomatikMail
             eposta.Subject = "son siparişler";
             eposta.Body = mailBody;
             SmtpClient smtp = new SmtpClient();
-            smtp.Credentials = new System.Net.NetworkCredential("nihatbaydag@gmail.com", "nurhatbaydag36");
+            smtp.Credentials = new System.Net.NetworkCredential("nihatbaydag@gmail.com", "şifre");
             smtp.Port = 587;
             smtp.Host = "smtp.gmail.com";
             smtp.EnableSsl = true;
