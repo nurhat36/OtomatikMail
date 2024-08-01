@@ -31,12 +31,12 @@ namespace OtomatikMail
         private static void mailGonder(string mailBody)
         {
             MailMessage eposta = new MailMessage();
-            eposta.From = new MailAddress("nihatbaydag@gmail.com"); 
-            eposta.To.Add("baydagnurhat31@gmail.com");
+            eposta.From = new MailAddress("gönderen e posta"); 
+            eposta.To.Add("gönderilen en posta");
             eposta.Subject = "son siparişler";
             eposta.Body = mailBody;
             SmtpClient smtp = new SmtpClient();
-            smtp.Credentials = new System.Net.NetworkCredential("nihatbaydag@gmail.com", "şifre");
+            smtp.Credentials = new System.Net.NetworkCredential("gönderen e posta", "şifre");
             smtp.Port = 587;
             smtp.Host = "smtp.gmail.com";
             smtp.EnableSsl = true;
