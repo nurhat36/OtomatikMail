@@ -10,6 +10,7 @@ namespace OtomatikMail
     {
         static void Main(string[] args)
         {
+            
         }
     }
 }
